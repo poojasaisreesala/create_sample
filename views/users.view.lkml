@@ -49,6 +49,8 @@ view: users {
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
+    html: <a href= "https://www.google.com/search?q={{value}}">{{value}}</a> ;;
+    map_layer_name: us_states
   }
   dimension: zip {
     type: zipcode
