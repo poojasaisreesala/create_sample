@@ -49,7 +49,11 @@ view: users {
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
-    html: <a href= "https://www.google.com/search?q={{value}}">{{value}}</a> ;;
+    link: {
+      label: "Search in google"
+      url: "https://www.google.com/search?q={{value}}"
+    }
+
     map_layer_name: us_states
   }
   dimension: zip {
